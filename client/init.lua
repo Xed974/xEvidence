@@ -16,7 +16,7 @@ end)
 
 RegisterNetEvent('esx:playerLoaded')
 AddEventHandler('esx:playerLoaded', function()
-    TriggerServerEvent("xEvidence:actualise")
+    TriggerServerEvent("xEvidence:actualiseAll")
 end)
 
 myEvidence = {}
