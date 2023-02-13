@@ -20,7 +20,7 @@ AddEventHandler('esx:playerLoaded', function()
 end)
 
 myEvidence = {}
-TriggerServerEvent("xEvidence:actualise")
+TriggerServerEvent("xEvidence:actualiseAll")
 
 CreateThread(function()
     while true do
