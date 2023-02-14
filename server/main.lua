@@ -5,13 +5,6 @@ AddEventHandler("xEvidence:actualiseAll", function()
     end)
 end)
 
-RegisterNetEvent("xEvidence:actualise")
-AddEventHandler("xEvidence:actualise", function()
-    MySQL.Async.fetchAll("SELECT * FROM evidence", {}, function(result)
-        TriggerClientEvent("xEvidence:refresh", source, result)
-    end)
-end)
-
 RegisterNetEvent("xEvidence:shoot")
 AddEventHandler("xEvidence:shoot", function(pPos, type)
     local xPlayer = ESX.GetPlayerFromId(source)
